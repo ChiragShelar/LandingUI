@@ -1,0 +1,70 @@
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f3eef4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4B0082;
+    flex-direction: column;
+    position: relative;
+}
+
+.hero-text{
+    text-align: center;
+    max-width: 800px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.hero-text h1{
+    font-size: 64px;
+}
+
+.hero-text p{
+    max-width: 500px;
+    margin: 30px auto;
+    line-height: 1.4;
+}
+
+.play-overlay-container {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 50px;
+}
+
+.learning {
+    display: block;
+    max-width: 900px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.circle-image {
+    position: absolute; /* Position relative to the nearest positioned ancestor (hero) */
+    bottom: -100px;
+    left: 0;
+    width: 200px; /* Adjust width to fit your design */
+    height: 200px; /* Adjust height to fit your design */
+    overflow: hidden; /* Hide the overflow to display only part of the image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-image img {
+    width: 200%; /* Scale the image to cover the container */
+    height: auto;
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+    transform: translate(-50%, -50%); /* Position the image to show the upper right quadrant */
+}

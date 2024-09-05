@@ -1,0 +1,137 @@
+.testimonial-container {
+  background-color: #f3eef4;
+  color: #4B0082;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.testimonial-title {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.testimonial-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.testimonial-left {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.student-image {
+  position: relative;
+  z-index: 2;
+  width: 250;
+  height: 250px;
+  object-fit: cover;
+}
+
+.testimonial-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #4B0082;
+  color: #f3eef4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  height: 300px; /* This will ensure it doesn't resize */
+
+}
+
+.quote-image {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.testimonial-comment {
+  margin-bottom: 10px;
+}
+
+.testimonial-stars {
+  margin-bottom: 10px;
+}
+
+.star {
+    font-size: 1.2rem;
+  }
+  
+  .filled {
+    color: gold;
+  }
+  
+  .half {
+    color: gold;
+    background: linear-gradient(to right, gold 50%, grey 50%);
+    -webkit-background-clip: text; 
+    -moz-background-clip: text; 
+    -ms-background-clip: text;  
+    -o-background-clip: text;  
+    background-clip: text;  
+    color: transparent;         
+  }
+  
+  .empty {
+    color: grey;
+  }
+  
+
+.testimonial-name {
+  font-weight: bold;
+}
+
+.testimonial-location {
+  font-size: 0.9rem;
+  color: grey;
+}
+
+.testimonial-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: lightgrey;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: grey;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .testimonial-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .testimonial-left {
+    margin-bottom: 20px;
+  }
+
+  .testimonial-right {
+    align-items: center;
+  }
+
+  .testimonial-comment {
+    text-align: center;
+  }
+}

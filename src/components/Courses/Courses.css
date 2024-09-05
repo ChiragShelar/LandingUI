@@ -1,0 +1,161 @@
+/* Main Container */
+.Courses {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4B0082;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 40px;
+  }
+  
+  .header-text {
+    font-size: 30px;
+  }
+  
+  /* Cards Container */
+  .cards {
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap; /* Allows cards to wrap if there's not enough space */
+    justify-content: center;
+  }
+  
+  /* Card */
+  .card {
+    width: 400px;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Image Container */
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Text Overlay */
+  .text-overlay {
+    position: absolute;
+    font-size: 15px;
+    bottom: 20px;
+    right:10px;
+    display: flex; /* Use flexbox for horizontal alignment */
+    gap: 10px; /* Space between overlay texts */
+  }
+  
+  .overlay-text-first {
+    display: block;
+    background: #4B0082; /* Background color for the first text */
+    color: white; /* Default text color */
+    border-radius: 5px;
+    padding: 5px;
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+  }
+  
+  /* Second Overlay Text */
+  .overlay-text-second {
+    display: block;
+    background: #4CAF50; /* Background color for the second text */
+    color: white; /* Default text color */
+    border-radius: 5px;
+    padding: 5px;
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+  }
+  
+  /* Change color on hover */
+  .overlay-text-first:hover {
+    color: #4B0082; /* Change this to the color you want on hover */
+    background-color: white;
+  }
+  
+  .overlay-text-second:hover {
+    color: #4CAF50; /* Change this to the color you want on hover */
+    background-color: white;
+  }
+  
+  /* Card Content */
+  .card-content {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .card-subtitle {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Button Group in Card */
+  .button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  /* Button-like Elements */
+  .button-like {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd; /* Border styling */
+    border-radius: 25px; /* Rounded corners */
+    background: transparent;
+    cursor: pointer;
+    padding: 5px 10px; /* Padding inside the button */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition for background and border color */
+  }
+  
+  /* Rounded Image Inside Button-like Element */
+  .button-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Rounded image */
+  }
+
+  .button-image-no-radius {
+    width: 15px;
+    border-radius: 0; /* Remove rounding for this image */
+  }
+  
+  /* Button Text */
+  .button-text {
+    font-size: 13px;
+    margin-left: 7px;
+  }
+  
+  /* Optional: Hover Effect for Button-like Elements */
+  .button-like:hover {
+    background-color: #f0f0f0; /* Change to desired hover background color */
+    border-color: #4B0082; /* Change to desired hover border color */
+  }
+  

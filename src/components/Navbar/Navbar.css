@@ -1,0 +1,124 @@
+nav{
+    width: 100%;
+    background: #f7f7f7;
+    color: #4B0082;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    padding: 0 10px;
+}
+
+.logo{
+    width: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+}
+
+.nav-links {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.nav-links li {
+    margin: 0 20px; /* Increase the spacing between nav-links items */
+    font-size: 16px;
+}
+
+.auth-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul, .auth-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li, .auth-links li {
+    margin: 0 7px;
+    font-size: 16px;
+}
+
+.login-btn {
+    border: 2px solid #4B0082; /* Darker border color */
+    padding: 5px 15px;
+    border-radius: 7px; /* Rounded corners */
+    font-size: 16px;
+    background-color: transparent;
+    color: #4B0082; /* Match the border color for text */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #4B0082; /* Darker background on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+.registration-btn {
+    border: 2px solid #4CAF50; /* Green border */
+    padding: 5px 15px;
+    border-radius: 7px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Initially filled with green */
+    color: #ffffff; /* White text */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.registration-btn:hover {
+    background-color: transparent; /* Remove green fill on hover */
+    color: #4CAF50; /* Change text color to green */
+    border-color: #4CAF50; /* Keep the green border */
+}
+
+
+.burger-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Mobile view adjustments */
+@media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background: #f7f7f7;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  
+    .nav-links.open {
+      display: flex;
+    }
+  
+    .nav-links ul {
+      flex-direction: column;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  
+    .burger-menu {
+      display: block;
+    }
+  
+    .auth-links {
+      display: none;
+    }
+  }
