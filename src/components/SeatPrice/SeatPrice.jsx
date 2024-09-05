@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './SeatPrice.css'; // Create this CSS file for styles
-import GreenTick from '../../assets/greentick.png'; // Assuming green tick is stored as greentick.png
+import './SeatPrice.css';
+import GreenTick from '../../assets/greentick.png';
 
 const SeatPriceComponent = () => {
     const [seatData, setSeatData] = useState([]);
